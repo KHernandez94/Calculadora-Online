@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+           
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA ONLINE</title>
+
+    <script src="../js/logicalc.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <form>
+        <H1>CALCULADORA ONLINE</H1>
+        <div>
+            <label>Ingresar valor</label>
+            <input id="valor1" type="text" step="0.0001" required/><br/><br/> 
+        </div>
+        <div>
+            <label>Ingresar valor</label>
+            <input id="valor2" type="text" step="0.0001" required/><br/><br/>  
+        </div>
+        <div>
+            <input type="button" value="+" onclick="sumar()">
+            <input type="button" value="-" onclick="restar()">
+            <input type="button" value="*" onclick="multiplicar()">
+            <input type="button" value="/" onclick="dividir()"><br/><br/>
+        </div>
+        <div>
+            <label>Resultado: </label>
+            <input id="Resultado" type="text" step="0.0001" readonly=""/><br/><br/> 
+        </div>
+    <input type="reset" name="Limpiar"value="Limpiar">
+    </form>
+</body>
+
+</html>
